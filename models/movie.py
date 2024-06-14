@@ -13,6 +13,7 @@ class BaseMovie(BaseModel):
     id: Optional[PyObjectId] = Field(alias = "_id", default = None)
     title: str
     plot: str
+    runtime: int
     genres: List[str]
     cast: List[CastMember]
     directors: List[str]

@@ -1,9 +1,10 @@
 from typing import List, Optional
 from pydantic import BaseModel, Field
-from db.database import PyObjectId;\
+from db.database import PyObjectId
+
 
 class Actor(BaseModel):
-    id: Optional[PyObjectId] = Field(alias = "_id", default = None)
+    id: Optional[PyObjectId] = Field(alias="_id", default=None)
     first_name: str
     last_name: str
     description: str

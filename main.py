@@ -8,6 +8,7 @@ app = FastAPI()
 for router in [movies_router, comments_router, actors_router]:
     app.include_router(router)
 
+
 @app.get("/")
 async def root():
     return {"message": "Server is running"}
